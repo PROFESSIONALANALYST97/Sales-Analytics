@@ -1,0 +1,20 @@
+WITH CalculatedDates AS (
+    SELECT
+        acs.account_id,
+        DATE_ADD(s.date, INTERVAL e.sent_date DAY) AS calculated_sent_date
+    FROM
+        `data-analytics-mate.DA.email_sent` AS e
+    JOIN
+        `data-analytics-mate.DA.account` AS a ON e.id_account = a.id
+    JOIN
+        `data-analytics-mate.DA.account_session` AS acs ON a.id = acs.account_id
+    JOIN
+        `data-analytics-mate.DA.session` AS s ON acs.ga_session_id = s.ga_session_id
+)
+
+
+SELECT
+    DISTINCT account_id,
+    MIN(calculated_sent_date) OVER (PARTITION BY account_id) AS first_sent_date
+FROM
+    CalculatedDates;
