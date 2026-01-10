@@ -1,0 +1,35 @@
+WITH UniqueSentDates AS (
+    SELECT
+        DISTINCT
+        acs.account_id,
+        DATE(DATE_ADD(s.date, INTERVAL e.sent_date DAY)) AS sent_date
+    FROM
+        `data-analytics-mate.DA.email_sent` e
+    JOIN
+        `data-analytics-mate.DA.account` a ON e.id_account = a.id
+    JOIN
+        `data-analytics-mate.DA.account_session` acs ON a.id = acs.account_id
+    JOIN
+        `data-analytics-mate.DA.session` s ON acs.ga_session_id = s.ga_session_id
+),
+RankedEmails AS (
+    SELECT
+        account_id,
+        sent_date,
+        DENSE_RANK() OVER (
+            PARTITION BY account_id
+            ORDER BY sent_date DESC
+        ) AS sent_day_rank
+    FROM
+        UniqueSentDates
+)
+SELECT
+    account_id,
+    sent_date,
+    sent_day_rank
+FROM
+    RankedEmails
+WHERE
+    sent_day_rank <= 10
+ORDER BY
+    account_id, sent_day_rank;
