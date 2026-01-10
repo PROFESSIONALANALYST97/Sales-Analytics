@@ -1,2 +1,18 @@
-###Advanced SQL Analytics: Customer Engagement & Marketing Performance
-This repository showcases a collection of advanced SQL projects developed during my data analytics training. The projects focus on transforming raw data into actionable business insights using complex analytical techniques.
+# 📊 Advanced SQL Analytics Portfolio
+## Customer Engagement & Marketing Performance
+
+---
+
+### 🏆 Featured Project: Marketing Data Mart
+This is my **Capstone Project**, designed to provide a 360-degree view of the customer lifecycle.
+
+#### **Key Technical Skills:**
+* **Complex Modeling:** Using `CTEs` and `UNION ALL`.
+* **Window Functions:** Implementation of `DENSE_RANK` and `SUM OVER`.
+* **Data Cleaning:** Handling missing geographic data and date normalization.
+
+---
+
+### 🛠️ Tech Stack
+* **Language:** SQL (BigQuery/GCP)
+* **Focus:** Business Intelligence & Growth Analytics
