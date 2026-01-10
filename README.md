@@ -19,12 +19,11 @@ This is my primary project, where I designed a complex data transformation pipel
 # 📁 Other Analytical Projects
 
 ## 📧 Email Campaign Performance & Market Share Analysis
-* **Goal:** Analyzing monthly email volume per account and calculating their percentage share in the total market.
-* **Key Skills:** Time-series aggregation using `DATE_TRUNC` and proportional analysis with window functions (`PARTITION BY`).
+*This comprehensive project combines email volume metrics with financial forecasting.*
 
-## 📈 Revenue & Predictive Modeling Comparison
-* **Goal:** Comparing actual sales data against predictive models to evaluate forecasting accuracy.
-* **Key Skills:** Cumulative calculations (Running Totals) using `SUM() OVER(ORDER BY ...)` and accuracy ratio analysis.
+* **Market Share Analysis:** Calculated monthly email volumes per account and their percentage share relative to total volume using `PARTITION BY`.
+* **Revenue vs. Prediction:** Integrated actual sales data with predictive models using `UNION ALL`.
+* **Cumulative Metrics:** Implemented **Running Totals** (`SUM OVER`) to evaluate how actual revenue matches predicted values day-over-day.
 
 ## 🌍 Global Market Performance & User Verification
 * **Goal:** A cross-sectional analysis of revenue and user verification status across continents.
@@ -42,5 +41,5 @@ This is my primary project, where I designed a complex data transformation pipel
 
 ## 🛠️ Technical Skills & Tools
 * **Language:** SQL (Google BigQuery / Standard SQL)
-* **Advanced Techniques:** Window Functions, Common Table Expressions (CTEs), Conditional Aggregations, Data Normalization.
+* **Advanced Techniques:** Window Functions, Common Table Expressions (CTEs), Conditional Aggregations, Data Normalization, Table Unions.
 * **Environment:** Google Cloud Platform (GCP).
