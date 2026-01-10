@@ -1,37 +1,37 @@
-# 📊 SQL Data Analytics Portfolio
-## Advanced Business Intelligence & Marketing Insights
+# 📊 SQL Analytics Portfolio
+## Business Intelligence & Data Transformation
 
 ---
 
 # 🏆 Main Project: Capstone Project
-**Comprehensive Email Marketing & User Engagement Data Mart**
+**Comprehensive Marketing & User Engagement Data Mart**
 
-This is my primary project, where I developed a complex data pipeline to consolidate account activity, geographic data, and email funnel metrics into a single analytical view.
+This was my final project during the training, where I designed an end-to-end data transformation process.
 
-### **Key Technical Achievements:**
-* **Advanced Data Architecture:** Integrated 7+ tables using multiple **CTEs** and `UNION ALL` to create a unified Fact Table.
-* **Performance Ranking:** Utilized `DENSE_RANK()` and `QUALIFY` to identify top-performing global markets.
-* **Funnel Analysis:** Tracked the full customer journey from email delivery to website engagement.
-* **Data Precision:** Applied `DATE_ADD` and `INTERVAL` for accurate event-time normalization.
-
----
-
-# 📁 Other Analytical Projects
-
-### 📈 Revenue vs. Predictive Modeling
-* Comparison of actual sales data with predictive models using **Running Totals** (`SUM OVER`).
-* Calculated accuracy ratios to evaluate forecasting model performance.
-
-### 📧 Email Campaign Recency Analysis
-* Used **Window Functions** to identify the 10 most recent interactions per account.
-* Implemented complex joins to bridge marketing events with session-level data.
-
-### 🌍 Global Market & Device Segmentation
-* Analyzed revenue distribution across continents and device types (Mobile vs. Desktop).
-* Calculated market share percentages using global window aggregations.
+### **Technical Highlights:**
+* **Hybrid Modeling:** Combined multiple data streams using **CTEs** and `UNION ALL`.
+* **Advanced Metrics:** Integrated **Funnel Analysis** (Sent → Open → Visit) with geographic data.
+* **Smart Filtering:** Used `DENSE_RANK()` and `QUALIFY` to isolate top-performing markets.
 
 ---
 
-### 🛠️ Technical Skills
-* **SQL Dialects:** Google BigQuery (GCP), Standard SQL.
-* **Functions:** Window Functions, CTEs, Conditional Aggregations, Table Unions, Data Cleaning.
+# 📁 Project Catalog
+
+### ### WPISZ TUTAJ DOKŁADNĄ NAZWĘ PLIKU 1 (np. Revenue_vs_Predict)
+* **Goal:** Comparing actual financial results with predictive models.
+* **Skills:** Running totals, cumulative sums, and performance ratios.
+
+### ### WPISZ TUTAJ DOKŁADNĄ NAZWĘ PLIKU 2 (np. Email_Recency)
+* **Goal:** Tracking the most recent user interactions.
+* **Skills:** Window functions and complex multi-table joins.
+
+### ### WPISZ TUTAJ DOKŁADNĄ NAZWĘ PLIKU 3 (np. Continent_Analysis)
+* **Goal:** Geographic and device-based revenue segmentation.
+* **Skills:** Proportional analysis (`SUM OVER`) and `FULL OUTER JOIN`.
+
+---
+
+### 🛠️ Core Competencies
+* **Advanced SQL:** CTEs, Window Functions, Nested Subqueries.
+* **Data Engineering:** Data Cleaning, Table Normalization, Funnel Construction.
+* **Tools:** Google BigQuery / Google Cloud Platform.
