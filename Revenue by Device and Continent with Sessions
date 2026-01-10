@@ -1,0 +1,47 @@
+WITH revenue_and_sessions AS (
+    SELECT
+        sp.continent AS continent,
+        SUM(p.price) AS revenue,
+        SUM(CASE WHEN sp.device = 'mobile' THEN p.price END) AS revenue_from_mobile,
+        SUM(CASE WHEN sp.device = 'desktop' THEN p.price END) AS revenue_from_desktop,
+        COUNT(DISTINCT sp.ga_session_id) AS session_count
+    FROM
+        `data-analytics-mate.DA.session_params` sp
+    JOIN `data-analytics-mate.DA.session` s
+        ON sp.ga_session_id = s.ga_session_id
+    LEFT JOIN `data-analytics-mate.DA.order` o
+        ON s.ga_session_id = o.ga_session_id
+    LEFT JOIN `data-analytics-mate.DA.product` p
+        ON o.item_id = p.item_id
+    GROUP BY
+        sp.continent
+),
+account_metrics AS (
+    SELECT
+        sp.continent AS continent,
+        COUNT(DISTINCT a.id) AS account_count,
+        COUNT(DISTINCT CASE WHEN a.is_verified = 1 THEN a.id END) AS verified_account
+    FROM
+        `data-analytics-mate.DA.account` a
+    LEFT JOIN `data-analytics-mate.DA.account_session` acs
+        ON a.id = acs.account_id
+    JOIN `data-analytics-mate.DA.session_params` sp
+        ON sp.ga_session_id = acs.ga_session_id
+    GROUP BY
+        sp.continent
+)
+SELECT
+    COALESCE(r.continent, a.continent) AS continent,
+    r.revenue,
+    r.revenue_from_mobile,
+    r.revenue_from_desktop,
+    (r.revenue / SUM(r.revenue) OVER ()) * 100 AS percent_revenue_from_total,
+    a.account_count,
+    a.verified_account,
+    r.session_count
+FROM
+    revenue_and_sessions r
+FULL OUTER JOIN account_metrics a
+    ON r.continent = a.continent
+ORDER BY
+    continent;
