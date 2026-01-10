@@ -1,18 +1,37 @@
-# 📊 Advanced SQL Analytics Portfolio
-## Customer Engagement & Marketing Performance
+# 📊 SQL Data Analytics Portfolio
+## Advanced Business Intelligence & Marketing Insights
 
 ---
 
-### 🏆 Featured Project: Marketing Data Mart
-This is my **Capstone Project**, designed to provide a 360-degree view of the customer lifecycle.
+# 🏆 Main Project: Capstone Project
+**Comprehensive Email Marketing & User Engagement Data Mart**
 
-#### **Key Technical Skills:**
-* **Complex Modeling:** Using `CTEs` and `UNION ALL`.
-* **Window Functions:** Implementation of `DENSE_RANK` and `SUM OVER`.
-* **Data Cleaning:** Handling missing geographic data and date normalization.
+This is my primary project, where I developed a complex data pipeline to consolidate account activity, geographic data, and email funnel metrics into a single analytical view.
+
+### **Key Technical Achievements:**
+* **Advanced Data Architecture:** Integrated 7+ tables using multiple **CTEs** and `UNION ALL` to create a unified Fact Table.
+* **Performance Ranking:** Utilized `DENSE_RANK()` and `QUALIFY` to identify top-performing global markets.
+* **Funnel Analysis:** Tracked the full customer journey from email delivery to website engagement.
+* **Data Precision:** Applied `DATE_ADD` and `INTERVAL` for accurate event-time normalization.
 
 ---
 
-### 🛠️ Tech Stack
-* **Language:** SQL (BigQuery/GCP)
-* **Focus:** Business Intelligence & Growth Analytics
+# 📁 Other Analytical Projects
+
+### 📈 Revenue vs. Predictive Modeling
+* Comparison of actual sales data with predictive models using **Running Totals** (`SUM OVER`).
+* Calculated accuracy ratios to evaluate forecasting model performance.
+
+### 📧 Email Campaign Recency Analysis
+* Used **Window Functions** to identify the 10 most recent interactions per account.
+* Implemented complex joins to bridge marketing events with session-level data.
+
+### 🌍 Global Market & Device Segmentation
+* Analyzed revenue distribution across continents and device types (Mobile vs. Desktop).
+* Calculated market share percentages using global window aggregations.
+
+---
+
+### 🛠️ Technical Skills
+* **SQL Dialects:** Google BigQuery (GCP), Standard SQL.
+* **Functions:** Window Functions, CTEs, Conditional Aggregations, Table Unions, Data Cleaning.
