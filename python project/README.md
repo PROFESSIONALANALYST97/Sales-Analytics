@@ -1,16 +1,16 @@
-# Global Retail Sales Analysis (Python & Pandas)
+# 📊 Global Sales & Logistics Analytics
 
-### Project Overview
-Comprehensive analysis of a global retail dataset covering multiple years of sales across physical and online stores. The project focuses on data cleaning, integration, and extracting actionable business insights.
+## Project Overview
+An end-to-end data analysis project focusing on international sales performance, logistics efficiency, and product profitability. The analysis was performed using Python on a dataset integrated from multiple sources (Events, Products, Countries).
 
-### Key Features & Workflow
-* **Data Preprocessing**: Handled missing values, identified anomalies, and normalized string data (handling casing and special characters).
-* **Data Integration**: Merged three relational datasets (events, products, countries) into a unified DataFrame for holistic analysis.
-* **Business Logic & KPIs**: Calculated total revenue, profit margins, and order volumes to evaluate company performance.
-* **Visualizations**: Created insightful charts using Seaborn and Matplotlib to show sales dynamics by region, product category, and sales channel.
-* **Logistics Analysis**: Investigated the time gap between order and shipment to identify bottlenecks in the supply chain.
-* **Temporal Trends**: Analyzed sales performance by day of the week and identified seasonal patterns.
+## Key Insights Found:
+* **Market Concentration:** Identified Europe as the primary revenue driver, while Asian markets show significant growth potential.
+* **Logistics Stability:** Confirmed that shipping durations are standardized across most regions, with minimal variance between product categories.
+* **Sales Dynamics:** Detected high volatility in monthly profit peaks, suggesting strong seasonal impacts on global trade.
+* **Behavioral Patterns:** Mapped sales volume by day of the week, revealing specific peak days for high-margin product categories.
 
-### Tech Stack
-* **Language**: Python
-* **Libraries**: Pandas, NumPy, Matplotlib, Seaborn
+## Technical Skills Demonstrated:
+* **Data Cleaning:** Handling missing values, duplicates, and data type conversions.
+* **Data Engineering:** Merging relational datasets using Pandas.
+* **Visualization:** Advanced charting with Matplotlib and Seaborn (Line charts, Scatter plots, Bar charts).
+* **Statistical Analysis:** Descriptive statistics and correlation testing.
