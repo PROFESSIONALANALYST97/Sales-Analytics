@@ -1,11 +1,21 @@
-# 📊 SQL Data Analytics Portfolio
-## Business Intelligence & Data Transformation
+# 📊 Data Analytics Portfolio: SQL & Python
+## Business Intelligence, Data Transformation & Predictive Insights
 
 ---
 
-# 🏆 Main Project: Capstone Project
-**Comprehensive Marketing & User Engagement Data Mart**
+# 🐍 Featured Python Project
+### [Global Sales & Logistics Analytics](./python%20project/Global_Sales_Analytics.ipynb)
+**Comprehensive End-to-End Sales Performance & Logistics Study**
 
+* **Data Integration:** Merged relational datasets (Sales, Products, Countries) into a master analytical DataFrame.
+* **Logistics Insights:** Conducted Lead-Time analysis to identify shipping efficiency and its correlation with profitability.
+* **Visualization:** Created advanced time-series and behavioral plots (Seaborn/Matplotlib) to track monthly dynamics and weekly sales patterns.
+* **Exploratory Data Analysis:** Full EDA process including data cleaning, anomaly detection, and KPI calculation.
+
+---
+
+# 🗄️ Main SQL Project: Capstone Project
+**Comprehensive Marketing & User Engagement Data Mart**
 This is my primary project, where I designed a complex data transformation pipeline that integrates account activity, geographic data, and marketing funnel metrics.
 
 **Key Technical Achievements:**
