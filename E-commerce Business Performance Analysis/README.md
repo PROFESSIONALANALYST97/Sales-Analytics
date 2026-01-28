@@ -1,15 +1,15 @@
-# E-commerce Business Performance Audit
+# E-commerce Business Performance Analysis
 
 ## Project Overview
-A comprehensive study of e-commerce health, analyzing how different traffic sources and geographic regions contribute to overall revenue and user engagement.
+A comprehensive study of e-commerce health, analyzing traffic sources and geographic regions' contribution to revenue.
 
 ## Workflow & Features
 * **ETL Process:** Extracted data from Google BigQuery and processed it using Python (Pandas/Seaborn).
-* **Insights:** Deep dive into revenue contributors, identifying Organic and Direct traffic as primary drivers.
-* **Interactive Dashboard:** [Link to Tableau Public Dashboard](https://public.tableau.com/app/profile/jan.cwirko/viz/PortfolioProjectSalesAnalysis/StatisticalInsights)
-* **Key Visual:** `Dashboard_Overview.png` showcases the geographic sales map and trend sparklines.
+* **Interactive Dashboard:** [View Audit on Tableau Public](https://public.tableau.com/app/profile/jan.cwirko/viz/PortfolioProjectSalesAnalysis/StatisticalInsights)
+* **Note:** Use the **"Global Sales Dynamics"** and **"User Analysis"** tabs to explore the business audit.
+* **Visual Preview:**
+![Dashboard Preview](Dashboard_Overview.png)
 
 ## Technical Skills
-* **SQL:** Joining web sessions with order data.
-* **Python:** Statistical distribution checks and data normalization.
-* **Tableau:** Implementing Action Filters and Tab-based navigation for executive reporting.
+* **Advanced Tableau:** Implementing Action Filters (click a country on the map to navigate to detailed user analysis).
+* **Python Insights:** Deep dive into acquisition channels, identifying Organic and Direct as top performers.
