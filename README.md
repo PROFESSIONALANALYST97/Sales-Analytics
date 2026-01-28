@@ -4,15 +4,15 @@
 **Tools:** SQL, Python (Pandas, Scipy), Tableau
 * **Business Problem:** Evaluated the statistical significance of website changes to drive data-informed product decisions.
 * **Technical Execution:** Combined SQL data extraction with Python-based hypothesis testing (P-Value & Confidence Intervals).
-* **Visualization:** Developed an interactive Tableau dashboard to track conversion uplifts across user segments (Organic, Direct, etc.).
-* **Key Finding:** Concluded that observed differences were not statistically significant, preventing an ineffective global rollout.
+* **Visualization:** Developed an interactive Tableau dashboard to track conversion uplifts across user segments.
+* **Key Finding:** Concluded that observed differences were not statistically significant (P-Value > 0.05), preventing an ineffective global rollout.
 
 ### [E-commerce Business Performance Analysis](./Ecommerce_Performance_Audit/Potoflio_Project_Analysis_1.ipynb)
 **Tools:** SQL (BigQuery), Python, Tableau
 * **Business Problem:** A holistic audit of international sales dynamics, user behavior, and traffic source efficiency.
 * **Technical Execution:** Performed complex data cleaning and behavioral analysis using Python, integrated with BigQuery data marts.
-* **Visualization:** Built a high-level Tableau dashboard featuring geographical maps, sparklines, and smart navigation filters.
-* **Key Finding:** Identified that while email newsletters drive traffic, they don't correlate with higher transaction values, suggesting a need for offer optimization.
+* **Visualization:** Built a high-level Tableau dashboard featuring geographical maps and smart navigation filters.
+* **Key Finding:** Identified that Organic and Direct traffic are primary revenue drivers, while email newsletters require offer optimization.
 
 ---
 # 📊 Data Analytics Portfolio: SQL & Python
