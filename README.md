@@ -6,8 +6,8 @@
 * **Technical Execution:** Combined SQL data extraction with Python-based hypothesis testing (P-Value & Confidence Intervals).
 * **Visualization:** Developed an interactive Tableau dashboard to track conversion uplifts across user segments.
 * **Key Finding:** Concluded that observed differences were not statistically significant (P-Value > 0.05), preventing an ineffective global rollout.
-
-### [E-commerce Business Performance Analysis](./Ecommerce_Performance_Audit/Potoflio_Project_Analysis_1.ipynb)
+* 
+### [E-commerce Business Performance Analysis](./Ecommerce_Performance_Audit/Portfolio_Project_Analysis_1.ipynb)
 **Tools:** SQL (BigQuery), Python, Tableau
 * **Business Problem:** A holistic audit of international sales dynamics, user behavior, and traffic source efficiency.
 * **Technical Execution:** Performed complex data cleaning and behavioral analysis using Python, integrated with BigQuery data marts.
