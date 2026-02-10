@@ -1,6 +1,6 @@
 # 🚀 Hybrid Data Projects (Full Stack Analytics)
 
-### [A/B Test Analysis: Website Conversion Optimization](./AB_Testing_Analysis/Portfolio_Project_2_A_B_TEST_ANALYSIS.ipynb](https://github.com/PROFESSIONALANALYST97/Sales-Analytics/blob/main/AB_Testing_Analysis/Portfolio%20Project%202%20A_B%20TEST%20ANALYSIS.ipynb))
+### [A/B Test Analysis: Website Conversion Optimization](./AB_Testing_Analysis/Portfolio_Project_2_A_B_TEST_ANALYSIS.ipynb](https://github.com/PROFESSIONALANALYST97/Sales-Analytics/blob/main/AB_Testing_Analysis/Portfolio%20Project%202%20A_B%20TEST%20ANALYSIS.ipynb)
 **Tools:** SQL, Python (Pandas, Scipy), Tableau
 * **Business Problem:** Evaluated the statistical significance of website changes to drive data-informed product decisions.
 * **Technical Execution:** Combined SQL data extraction with Python-based hypothesis testing (P-Value & Confidence Intervals).
